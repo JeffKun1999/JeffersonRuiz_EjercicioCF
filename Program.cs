@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using JeffersonRuiz_EjercicioCF.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<JeffersonRuiz_EjercicioCF_DBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("JeffersonRuiz_EjercicioCF_DBContext") ?? throw new InvalidOperationException("Connection string 'JeffersonRuiz_EjercicioCF_DBContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
