@@ -4,6 +4,7 @@ using JeffersonRuiz_EjercicioCF.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JeffersonRuiz_EjercicioCF.Migrations
 {
     [DbContext(typeof(JeffersonRuiz_EjercicioCF_DBContext))]
-    partial class JeffersonRuiz_EjercicioCF_DBContextModelSnapshot : ModelSnapshot
+    [Migration("20240417164943_Iniciosss")]
+    partial class Iniciosss
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
