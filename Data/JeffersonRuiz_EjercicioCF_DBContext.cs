@@ -15,5 +15,6 @@ namespace JeffersonRuiz_EjercicioCF.Data
         }
 
         public DbSet<JeffersonRuiz_EjercicioCF.Models.Burger> Burger { get; set; } = default!;
+        public DbSet<JeffersonRuiz_EjercicioCF.Models.Burger> Promo { get; set; } = default!;
     }
 }
